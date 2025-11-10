@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>ITABookings</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Đăng nhập -->
+<div class="form-box" id="login-form">
+  <h2>Đăng nhập</h2>
+  <form onsubmit="return login(event)">
+    <label for="login-username">Tên đăng nhập</label>
+    <input id="login-username" type="text" required>
+
+    <label for="login-password">Mật khẩu</label>
+    <input id="login-password" type="password" required>
+
+    <button type="submit">Đăng nhập</button>
+    <p>Chưa có tài khoản? <a href="#" onclick="toggleForm()">Đăng ký</a></p>
+  </form>
+</div>
+
+<!-- Đăng ký -->
+<div class="form-box hidden" id="register-form">
+  <h2>Đăng ký</h2>
+  <form onsubmit="return register(event)">
+    <label for="register-username">Tên đăng nhập</label>
+    <input id="register-username" type="text" required>
+
+    <label for="register-email">Email</label>
+    <input id="register-email" type="email" required>
+
+    <label for="register-password">Mật khẩu</label>
+    <input id="register-password" type="password" required>
+
+    <label for="register-confirm">Nhập lại mật khẩu</label>
+    <input id="register-confirm" type="password" required>
+
+    <button type="submit">Đăng ký</button>
+    <p>Đã có tài khoản? <a href="#" onclick="toggleForm()">Đăng nhập</a></p>
+  </form>
+</div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
